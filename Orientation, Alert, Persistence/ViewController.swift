@@ -21,6 +21,10 @@ class ViewController: UIViewController {
 		static let debugDivider = "--------------"
 	}
 
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		return [.landscapeLeft, .portrait]
+	}
+
 	/// Note that you can also save Encodable objects into the Keychain like you can in `UserDefaults`.
 	/// Go to `KeychainSwift+Extensions.swift` to see the functions you can use.
 	///
@@ -38,7 +42,6 @@ class ViewController: UIViewController {
 
 		print(Constants.debugDivider)
 	}
-
 
 	@IBAction func onClear(_ sender: Any) {
 		keychain.delete(Constants.textKey)
