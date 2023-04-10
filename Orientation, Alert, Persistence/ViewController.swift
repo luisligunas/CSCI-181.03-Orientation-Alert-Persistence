@@ -71,7 +71,7 @@ class ViewController: UIViewController {
 		let alert = UIAlertController(
 			title: "Hello",
 			message: "This is longer text that can span multiple lines.",
-			preferredStyle: .alert // You can replace this with `.alert` to use the Alert type used more often
+			preferredStyle: .actionSheet // You can replace this with `.alert` to use the Alert type used more often
 		)
 		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
 			print("Cancel was tapped!")
